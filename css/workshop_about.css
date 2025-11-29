@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 2000px;
+}
+
+/*Workshop-pages and About/contact-pages stylesheet*/
+.body {
+    margin: auto;
+}
+
+button {
+    background-color:  #773810;
+    padding: 1em;
+    border-radius: 0.5em;
+    border-width: 0px;
+    margin-bottom: 10em;
+    font-family: "Vollkorn", serif;
+    font-size: 1rem;
+    margin-bottom: 4em;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #7fa95b;
+}
+
+.content {
+    padding-top: 60px;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.workshops {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/media/photos/autumn-trees-hillside.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+
+}
+
+.workshops>p {
+    color: rgb(240, 240, 240);
+    text-align: center;
+    margin-bottom: 2em;
+    width: 55%;
+
+}
+
+.workshops h3 {
+    color: rgb(240, 240, 240);
+    text-align: center;
+    padding-bottom: 1em;
+    margin-top: 10%;
+}
+
+.workshops img {
+    margin-top: 2em;
+    border: #ffffffdd;
+    border-style: solid;
+    border-width: 6px;
+    display: flex;
+    width: 70%;
+    height: 20em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container4 {
+    padding-top: 2em;
+    background-image: url(/media/photos/green-trees-line-the-water-on-clear-day.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 2em;
+}
+
+.about {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    padding-bottom: 2em;
+    color: rgb(240, 240, 240);
+    background-color: #6a6a6ab6;
+    padding: 2%;
+    backdrop-filter: blur(2px);
+}
+
+.about p,
+.about h2 {
+    color: rgb(240, 240, 240);
+}
+
+.photocontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-position: bottom;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 2em;
+   
+}
+
+
+.photocontainer1,
+.photocontainer2,
+.photocontainer3 {
+    max-width: 100%;
+    height: 20em;
+    border-color: rgb(240, 240, 240);
+    border-style: solid;
+    border-width: 0.3em;
+    background-position: center;
+    background-size: cover;
+}
+
+.container4 {
+    backdrop-filter: blur(2px);
+}
+
+
+.photocontainer a :hover {
+    color: #7fa95b;
+}
+
+
+.photocontainer h3 {
+    width: 100%;
+    color: #773810;
+    display: block;
+    font-size: 30px;
+    background-color: rgb(240, 240, 240);
+    transition: 0.5s;
+
+}
+
+.photocontainer3 {
+    background-image: url(/media/photos/jade-stephens-WhVO1xKiDVw-unsplash.jpg);
+}
+
+.photocontainer2 {
+    background-image: url(/media/photos/yogaAI.jpg);
+}
+
+.photocontainer1 {
+    background-image: url(/media/photos/single-cloud-hovers-over-mountain-peak.jpg);
+
+}
+
+/*tablet and laptop style*/
+@media all and (min-width: 600px) {
+    #workshopscontainer {
+        justify-content: center;
+        display: flex;
+        flex-direction: row
+    }
+
+    .content>#workshopscontainer {
+        margin-top: 20em;
+        padding-top: 1em;
+    }
+
+    .content>.container4 {
+        padding-top: 4em;
+    }
+
+    .workshops {
+
+        padding-top: 6em;
+    }
+
+    .workshops img {
+        width: 20%;
+    }
+
+}

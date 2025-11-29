@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 2000px;
+
+}
+
+/*Start-page and Café-page stylesheet*/
+
+body {
+    background-color: rgb(240 240 240);
+}
+
+/*cafe style*/
+#coffeephoto {
+    height: 100%;
+    object-fit: cover;
+}
+
+#menuphoto {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+/*start-page style*/
+.flex_container a :hover,
+.photocontainer a :hover,
+.phone_container a :hover {
+    margin: auto;
+    width: 95%;
+}
+
+.flex_container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    justify-content: center;
+
+}
+
+
+.container1 {
+    margin-top: 60px;
+    display: flex;
+    background-image: url(/media/photos/tall-pines-by-cabin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    height: 35rem;
+    background-position: bottom;
+}
+
+.container1 h1 {
+    margin: auto;
+    width: 100%;
+    color: rgb(240 240 240);
+    text-shadow: black 1px 0px 10px;
+    font-size: 30px;
+    padding: 5%;
+    font-weight: 100;
+}
+
+.container2 h2,
+.container3 h2,
+.container3_2 h2,
+.container4 h2 {
+    color: #773810;
+    margin: auto;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.container2 p,
+.container3 p,
+.container4 p,
+.container3_2 p {
+   width: 80%;
+   margin: auto;
+    text-align: center;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    color: black
+}
+
+.container3 img {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    transition: 0.9s;
+}
+
+.container4 img {
+    display: flex;
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    object-position: bottom;
+    transition: 0.9s;
+    margin: auto;
+}
+
+.container4 {
+    background-color: rgb(240, 240, 240);
+}
+
+.photocontainer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-position: bottom;
+    justify-content: space-around;
+    gap: 2em;
+    padding: 2em;
+    background-color: rgb(240, 240, 240);
+}
+
+.photocontainer1 img,
+.photocontainer2 img,
+.photocontainer3 img {
+    max-width: 100%;
+}
+
+.photocontainer h3 {
+    width: 100%;
+    background-color: rgba(240, 240, 240, 0.81);
+    color: #773810;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    transition: 0.9s;
+    margin: auto;
+}
+
+.photocontainer3 {
+    background-image: url(/media/photos/jade-stephens-WhVO1xKiDVw-unsplash.jpg);
+    width: 90%;
+    height: 13em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.photocontainer2 {
+    background-image: url(/media/photos/yogaAI.jpg);
+    width: 90%;
+    height: 13em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+}
+
+.photocontainer1 {
+    display: none;
+    background-image: url(/media/photos/holly-mandarich-rJNxgIgecqQ-unsplash.jpg);
+    width: 90%;
+    height: 13em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    background-position: center;
+}
+
+#workshopheading {
+    display: none;
+}
+
+.container3_2 {
+    display: none;
+}
+
+
+/*tablet and laptop style*/
+@media all and (min-width: 900px) {
+    .container1 {
+        height: 40em;
+    }
+
+    .container2 p {
+        width: 60%;
+    }
+
+    .photocontainer2,
+    .photocontainer1,
+    .photocontainer3 {
+        height: 23em;
+        margin: 2em;
+    }
+
+    .photocontainer1 {
+        display: block;
+    }
+
+    .photocontainer {
+        background-color: rgb(240, 240, 240);
+        padding-bottom: 5em;
+        padding-top: 0;
+    }
+
+    .container3,
+    .container3_2 {
+        padding-top: 8em;
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        
+    }
+
+    .container3 img,
+    .container3_2 img {
+        height: 30em;
+        width: 100%;
+        object-fit: cover;
+        transition: 0.9s;
+        margin: auto;
+        display: grid;
+    }
+
+
+    #workshopheading {
+        margin: 0;
+        padding-top: 4em;
+        padding-bottom: 0;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .container3>.text_container {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .container3_2 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container3_2>.text_container {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .container3_2>a {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .container3_2 > .text_container{
+        margin-left: 30%;
+    }
+    .container3 > .text_container{
+        margin-right: 30%;
+    }
+  
+
+    .phone_container {
+        display: none;
+    }
+
+    #workshopheading {
+        display: block;
+    }
+
+    .photocontainer1,
+    .photocontainer2,
+    .photocontainer3 {
+        height: 30em;
+    }
+
+    .flex_container p {
+        padding: 2em;
+    }
+
+    /*cafe-page style*/
+    #container_cafe {
+        display: flex;
+        column-gap: 0;
+        width: 50%;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: rgb(240 240 240);
+    }
+
+
+
+    #container_cafe {
+        padding: 2em;
+        margin: auto;
+        background-color: rgba(220, 220, 220, 0.405);
+    }
+
+    #coffeephoto {
+        display: flex;
+        border: white;
+        border-style: solid;
+        border-width: 3px;
+        margin-top: 6em;
+        height: 20em;
+        max-width: 100%;
+
+        object-fit: cover;
+    }
+  
+}

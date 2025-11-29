@@ -1,0 +1,339 @@
+* {
+    padding: 0;
+    margin: 0;
+    max-width: 2000px;
+
+}
+
+/* Header And Footer CSS*/
+/*Top navigation bar*/
+ul {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav_link {
+    color: #773810;
+    transition: 0.4s;
+    font-weight: bolder;
+}
+
+.nav_link:hover {
+    color: #7fa95b;
+}
+
+body {
+    font-family: "Gowun Dodum", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer {
+    font-family: "Vollkorn", serif;
+    font-style: normal;
+}
+
+header {
+    width: 100%;
+    z-index: 99;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+}
+
+
+.header_content {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    min-height: 60px;
+}
+
+.logo1 {
+    max-width: 100%;
+}
+
+
+.nav_list {
+    display: flex;
+    column-gap: 48px;
+}
+
+
+/*Hamburger-bar, phone/ipad */
+.openhamburger {
+    margin-left: -2000em;
+    height: 0;
+    display: none;
+}
+
+.openhamburger li {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.openhamburger--open {
+    margin-left: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo3 {
+    display: none;
+}
+
+.logo1 {
+    width: 25rem;
+    padding: 1%;
+    margin: auto;
+}
+
+.nav {
+    display: none;
+}
+
+.openhamburger li {
+    line-height: 5rem;
+
+}
+
+.hamburgerbar {
+    padding-left: 5%;
+}
+
+header .mediapictures {
+    display: none
+}
+
+
+/*footer*/
+footer {
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    display: flex;
+    min-height: 400px;
+    background-color: rgba(182, 182, 182, 0.173);
+    flex-direction: column;
+    align-items: center;
+    line-height: 4rem;
+}
+
+footer p {
+    padding-left: 1em;
+    color: #773810;
+    font-family: "Gowun Dodum", serif;
+}
+
+footer .mediapictures {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.mediapictures :first-child {
+    width: 25%;
+    padding: 5%;
+}
+
+.mediapictures :last-child {
+    width: 40%;
+    padding: 5%;
+}
+
+.adress {
+    display: inline-block;
+    width: 50%;
+    line-height: 150%;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 80%;
+    line-height: normal;
+    margin-top: 6%;
+}
+
+footer img {
+    width: 5em;
+}
+
+.hours {
+    display: inline-block;
+    width: 40%;
+    line-height: 150%;
+    text-align: center;
+    padding-bottom: 5%
+}
+
+.info {
+    text-align: center;
+}
+
+/*tablet*/
+@media all and (min-width: 600px) {
+    .logo3 {
+        display: flex;
+        padding: 1%;
+        display: block;
+        width: 250px;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .hamburgerbar {
+        display: flex;
+        font-size: 110%;
+        margin: auto
+    }
+
+    header .mediapictures {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .mediapictures :first-child {
+        width: 19%;
+    }
+
+    .mediapictures :last-child {
+        width: 30%;
+        padding-left: 10%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        font-family: "vollkorn";
+    }
+
+    footer .info {
+        padding-top: 10%;
+        grid-column: 1;
+        grid-row: 1;
+        width: 90%;
+    }
+
+    .adress {
+        width: 70%;
+    }
+
+    .leaflogo {
+        grid-column: 2;
+        grid-row: 1;
+        margin: auto;
+    }
+
+    .leaflogo {
+        display: flex;
+        width: 25%;
+    }
+
+    footer .mediapictures {
+        grid-column: 3;
+        grid-row: 1;
+        margin: auto;
+        gap: 50%;
+    }
+
+
+    footer .copyright {
+        grid-column: 3;
+        text-align: end;
+        padding-right: 5px;
+    }
+
+    footer .mediapictures :first-child {
+        width: 30%;
+    }
+
+    footer .mediapictures :last-child {
+        width: 50%;
+    }
+
+}
+
+/*laptop screen*/
+@media all and (min-width: 1024px) {
+
+    header .mediapictures {
+        display: flex
+    }
+
+
+    .nav {
+        display: flex;
+        font-size: 110%;
+        margin: auto;
+    }
+
+    .hamburgerbar {
+        display: none;
+    }
+
+    .logo1 {
+        display: none;
+    }
+
+    .logo3 {
+        padding: 1%;
+        display: block;
+        width: 250px;
+    }
+
+    li ul {
+        display: none;
+        width: 100%;
+    }
+
+    li:hover ul {
+        display: block;
+        position: absolute;
+        line-height: 2.5rem;
+        text-align: center;
+        z-index: 10;
+        width: fit-content;
+        background-color: white;
+    }
+
+    nav ul li {
+        position: relative;
+        display: inline-block;
+        padding: 5px;
+
+    }
+
+    .nav a {
+        font-size: 80%;
+    }
+
+    .mediapictures {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .mediapictures :first-child {
+        width: 19%;
+    }
+
+    .mediapictures :last-child {
+        width: 30%;
+        padding-left: 10%;
+    }
+}
